@@ -23,8 +23,7 @@ options[4]="Fish"
 options[5]="OhMyZsh"
 options[6]="Firefox"
 options[7]="Chrome"
-options[8]="NodeJS"
-options[9]="NPM"
+options[8]="NodeJS & NPM"
 
 function ACTIONS {
     if [[ ${choices[0]} ]]; then
@@ -61,7 +60,7 @@ function ACTIONS {
         echo "Time For Chrome"
         brew cask install chrome
     fi
-    if [[ ${choices[7]} ]]; then
+    if [[ ${choices[8]} ]]; then
         echo "Time For NodeJS & NPM"
         brew install node && brew install npm
     fi
